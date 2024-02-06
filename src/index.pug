@@ -9,26 +9,26 @@ html(lang="ru")
         link(rel="stylesheet" href="/css/reset.css")
         link(rel="stylesheet" href="/css/index.css")
     body
+        header.header 
+            .header__content
+                a.logo(href="/")
+                    h1.logo__title QWERty   
+                .burger-menu
+                    .burger-menu__content   
+                        nav.main-nav.header__center
+                            ul.main-nav__list
+                                li.main-nav__item
+                                    a.main-nav__link.main-nav__link_active(href="#") Information 
+                                li.main-nav__item
+                                    a.main-nav__link(href="#") About&nbsp;us
+                                li.main-nav__item
+                                    a.main-nav__link(href="#") Culture
+                        label.search
+                            .search__icon
+                            input.search__form(type="text" placeholder="Search")
+                .cover-space__burger
+                button.burger-menu__control 
         .page
-            header.header 
-                .header__content
-                    a.logo(href="/")
-                        h1.logo__title QWERy
-                    .burger-menu
-                        .burger-menu__content   
-                            nav.main-nav.header__center
-                                ul.main-nav__list
-                                    li.main-nav__item
-                                        a.main-nav__link.main-nav__link_active(href="#") Information 
-                                    li.main-nav__item
-                                        a.main-nav__link(href="#") About&nbsp;us
-                                    li.main-nav__item
-                                        a.main-nav__link(href="#") Culture
-                            label.search
-                                .search__icon
-                                input.search__form(type="text" placeholder="Search")
-                        button.burger-menu__control
-                    .cover-space__burger
             .cover-space               
             section.section.section__main
                 .main-title
@@ -47,10 +47,10 @@ html(lang="ru")
                         li.social-networks__item
                             a.social-networks__link(href='#')
                                 .icon__facebook
-                .scroll-down
+                .scroll-down#scroll-action
                     | Scroll Down
                     .scroll-down__icon.icon__arrow_downward
-            .content
+            .content#scroll-to
                 section.section.section-cols
                     img.section-col.section-col__image(src='/images/enjoy.jpg' alt='Mountains')
                     .section-col.section-col__content
